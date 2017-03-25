@@ -1,0 +1,300 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: gray;
+     font-size: 24px;
+     line-height: 1.4;
+     font-family: 'Annie Use Your Telescope', cursive, sans-serif;
+}
+
+
+footer {
+     clear: both;
+}
+
+footer, header {
+     background-color: #151515;
+     color: gray;
+}
+
+header {
+     padding-top: 15px;
+}
+h1 {
+     text-align: center;
+     font-size: 2em;
+     font-weight: bold;
+}
+
+del {
+     -webkit-text-decoration-color: red;
+     -moz-text-decoration-color: red;
+     text-decoration-color: red;
+     -webkit-text-decoration-line: line-through;
+     -moz-text-decoration-line: line-through;
+     text-decoration-line: line-through;
+}
+
+ins {
+    color: red;
+    text-decoration: none;
+    font-family: 'Special Elite', Courier, cursive, sans-serif;
+    font-size: .85em;
+}
+
+h2 {
+     font-size: 1.5em;
+     color: #151515;
+     font-weight: bold;
+}
+
+h3 {
+     font-size: 1.2em;
+     color: #151515;
+     font-weight: bold;
+}
+
+
+li {
+     float: left;
+     width: 100px;
+     font-weight: bold;
+     margin: 10px 2%;
+     padding:  5px 2%;
+     color: #151515;
+     background-image: url("../images/flush.svg");
+     background-repeat: no-repeat;
+     background-position: bottom;
+     text-align: center;
+}
+
+li.flushed {
+   /* TO DO: add the webkit etc versions of transform */
+     animation-duration: 3s;
+     transform: rotate(-45deg);
+}
+
+li a {
+     position: relative;
+     text-decoration: none;
+     color: black;
+     top: -11px;
+     font-size: .8em;
+}
+
+nav {
+     margin: 0 auto;
+}
+
+header nav {
+     width: 600px;
+}
+
+header h1 {
+     margin-top: 0;
+}
+
+
+
+p {
+     font-size: 1em;
+     color: gray;
+     margin: 10px 2%;
+}
+
+strong {
+     font-weight: bold;
+}
+
+
+
+.active {
+     border: 1px solid gray;
+
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #808080;
+}
+
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right:15px solid #808080;
+}
+
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+#backstory {
+     float: left;
+     margin: 20px 3% 20px 0%;
+     width: 61%;
+}
+
+#copyright {
+     float: left;
+     text-align: right;
+     width: 20%;
+}
+
+#disclaimer {
+     float: left;
+     width: 80%;
+}
+
+#essay-arrows {
+     display: block;
+     text-align: center;
+}
+
+#essay-arrows.hidden {
+     display: none;
+}
+
+#gif {
+     border: 3pt solid #151515;
+     border-radius: 30px;
+     margin: 20px 3%;
+     padding: 5px 1%;
+     width: 30%;
+     float: left;
+     text-align: center;
+}
+
+#gif img {
+     width: 95%;
+}
+
+
+#essay {
+     margin: 20px 3%;
+     width: 55%;
+     float: left;
+}
+#essay img, iframe {
+     width: 100%;
+}
+
+#gallery-right {
+     float: left;
+     margin: 20px 3% 20px 0;
+     width: 36%;
+}
+
+
+#student {
+     text-align: center;
+}
+
+#student-div {
+     display: inline-block;
+}
+
+#student h2 {
+     display: inline;
+}
+
+
+
+
+/* RESPONSIVE STUFF */
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+body {
+     font-size: 18px;
+}
+
+#gif, #backstory, #disclaimer, #copyright, #gallery-right, #video, #vocab, #essay {
+     width: 95%;
+}
+
+
+/*
+TODO fix nav bar responsive
+nav li {
+     display: none;
+}
+
+nav li:last-child {
+     display: block;
+}
+ */
+
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+     margin: 0 auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
