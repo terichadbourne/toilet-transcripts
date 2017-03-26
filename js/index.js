@@ -32,7 +32,77 @@ var students = [
       {
         incorrect: "nast",
         correct: "nasty"
-      }
+      },
+    {
+       name: "Rosemary",
+       video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+       essay: ["http://placehold.it/1100x850/000000/ffffff?text=RosemaryOnlyHasOnePage"],
+       vocab: [
+         {
+           incorrect: "ungley",
+           correct: "ugly",
+         },
+         {
+           incorrect: "pobe",
+           correct: "people"
+         },
+         {
+           incorrect: "fluseing",
+           correct: "flushing"
+         },
+         {
+           incorrect: "toyit",
+           correct: "toilet",
+         },
+         {
+           incorrect: "topow",
+           correct: "trouble"
+         },
+         {
+           incorrect: "polpe",
+           correct: "people"
+         },
+         {
+           incorrect: "fluses",
+           correct: "flush"
+         },
+         {
+           incorrect: "sastls",
+           correct: "????",
+         },
+         {
+           incorrect: "toley",
+           correct: "toilet"
+         },
+   {
+      name: "Nicole",
+      video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+          essay: ["http://placehold.it/1100x850/000000/ffffff?text=NicolePage1", "http://placehold.it/1100x850/000000/ffffff?text=NicolePage2"],
+      vocab: [
+        {
+          incorrect: "wasint",
+          correct: "wasn't",
+        },
+        {
+          incorrect: "evry",
+          correct: "every"
+        },
+        {
+          incorrect: "rilly",
+          correct: "really"
+        },
+        {
+          incorrect: "konw",
+          correct: "no",
+        },
+        {
+          incorrect: "tolo",
+          correct: "toilet"
+        },
+        {
+          incorrect: "Alot",
+          correct: "a lot"
+        }
     ]
   }
   ]
@@ -41,7 +111,7 @@ $(document).ready(function(){
 
 //show first student at start
 displayStudent();
-
+//print entire dictionary to glossary page
 buildDictionary();
 
 //NAV FLUSHING
@@ -194,5 +264,3 @@ function displayNav (){
 
 
 });
-
-
