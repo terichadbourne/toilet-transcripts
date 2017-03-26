@@ -242,7 +242,7 @@ function displayNav (){
 };
 
 
-
+  
 
 
 //NAVIGATING ESSAY PAGES (when there's more than one)
