@@ -33,47 +33,49 @@ var students = [
         incorrect: "nast",
         correct: "nasty"
       },
-    {
-       name: "Rosemary",
-       video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-       essay: ["http://placehold.it/1100x850/000000/ffffff?text=RosemaryOnlyHasOnePage"],
-       vocab: [
-         {
-           incorrect: "ungley",
-           correct: "ugly",
-         },
-         {
-           incorrect: "pobe",
-           correct: "people"
-         },
-         {
-           incorrect: "fluseing",
-           correct: "flushing"
-         },
-         {
-           incorrect: "toyit",
-           correct: "toilet",
-         },
-         {
-           incorrect: "topow",
-           correct: "trouble"
-         },
-         {
-           incorrect: "polpe",
-           correct: "people"
-         },
-         {
-           incorrect: "fluses",
-           correct: "flush"
-         },
-         {
-           incorrect: "sastls",
-           correct: "????",
-         },
-         {
-           incorrect: "toley",
-           correct: "toilet"
-         },
+    ]},
+  {
+     name: "Rosemary",
+     video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+     essay: ["http://placehold.it/1100x850/000000/ffffff?text=RosemaryOnlyHasOnePage"],
+     vocab: [
+       {
+         incorrect: "ungley",
+         correct: "ugly",
+       },
+       {
+         incorrect: "pobe",
+         correct: "people"
+       },
+       {
+         incorrect: "fluseing",
+         correct: "flushing"
+       },
+       {
+         incorrect: "toyit",
+         correct: "toilet",
+       },
+       {
+         incorrect: "topow",
+         correct: "trouble"
+       },
+       {
+         incorrect: "polpe",
+         correct: "people"
+       },
+       {
+         incorrect: "fluses",
+         correct: "flush"
+       },
+       {
+         incorrect: "sastls",
+         correct: "????",
+       },
+       {
+         incorrect: "toley",
+         correct: "toilet"
+       },
+   ]},
    {
       name: "Nicole",
       video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
@@ -105,7 +107,7 @@ var students = [
         }
     ]
   }
-  ]
+]
 
 $(document).ready(function(){
 
