@@ -2,39 +2,6 @@ var count = 0;
 
 var students = [
   {
-    name: "Steven",
-    video: "https://www.youtube.com/embed/FNtpPW_7H1k",
-    essay: ["http://placehold.it/1100x850/000000/ffffff?text=StevenPage1", "http://placehold.it/1100x850/000000/ffffff?text=StevenPage2"],
-    vocab: [
-      {
-        incorrect: "toylet",
-        correct: "toilet",
-      },
-      {
-        incorrect: "pobe",
-        correct: "people"
-        }
-    ]
-  },
- {
-    name: "Nolan",
-    video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-    essay: ["http://placehold.it/1100x850/000000/ffffff?text=NolanOnlyHasOnePage"],
-    vocab: [
-      {
-        incorrect: "sastle",
-        correct: "???",
-      },
-      {
-        incorrect: "fluses",
-        correct: "flush"
-      },
-      {
-        incorrect: "nast",
-        correct: "nasty"
-      },
-    ]},
-  {
      name: "Rosemary",
      video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
      essay: ["http://placehold.it/1100x850/000000/ffffff?text=RosemaryOnlyHasOnePage"],
@@ -106,7 +73,365 @@ var students = [
           correct: "a lot"
         }
     ]
-  }
+  },
+  {
+    name: "Matthew",
+    video: "https://www.youtube.com/embed/FNtpPW_7H1k",
+    essay: ["images/matthew.jpg", "http://placehold.it/1100x850/000000/ffffff?text=MatthewPage2"],
+    vocab: [
+      {
+        incorrect: "wong",
+        correct: "wrong",
+      },
+      {
+        incorrect: "throgh",
+        correct: "threw"
+      },
+      {
+        incorrect: "speled",
+        correct: "spilled"
+      },
+      {
+        incorrect: "evrry were",
+        correct: "everywhere"
+      },
+      {
+        incorrect: "dosint",
+        correct: "doesn't",
+      },
+      {
+        incorrect: "no",
+        correct: "know"
+      },
+      {
+        incorrect: "yus",
+        correct: "use"
+      },
+      {
+        incorrect: "toylet",
+        correct: "toilet"
+      },
+      {
+        incorrect: "falt",
+        correct: "fault",
+      },
+      {
+        incorrect: "how",
+        correct: "who"
+      },
+      {
+        incorrect: "wasin't",
+        correct: "wasn't"
+      },
+      {
+        incorrect: "min",
+        correct: "mine"
+      },
+      {
+        incorrect: "dosint",
+        correct: "doesn't",
+      },
+      {
+        incorrect: "new",
+        correct: "knew"
+      },
+      {
+        incorrect: "us",
+        correct: "use"
+      },
+      {
+        incorrect: "resroom",
+        correct: "restroom"
+      }
+    ]
+  },
+  {
+     name: "Evelyn",
+     video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+     essay: ["http://placehold.it/1100x850/000000/ffffff?text=EvelynOnlyHasOnePage"],
+     vocab: [
+       {
+         incorrect: "toloit",
+         correct: "toilet",
+       },
+       {
+         incorrect: "discasded",
+         correct: "disgusted"
+       },
+       {
+         incorrect: "rest room",
+         correct: "restroom"
+       }
+     ]
+   },
+   {
+      name: "Adriana",
+      video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+      essay: ["http://placehold.it/1100x850/000000/ffffff?text=AdrianaOnlyHasOnePage"],
+      vocab: [
+        {
+          incorrect: "smaill",
+          correct: "smelled",
+        },
+        {
+          incorrect: "ther",
+          correct: "there"
+        },
+        {
+          incorrect: "grose",
+          correct: "gross"
+        },
+        {
+          incorrect: "nast",
+          correct: "nasty"
+        },
+        {
+          incorrect: "discousentony",
+          correct: "disgusting",
+        },
+        {
+          incorrect: "useing",
+          correct: "using"
+        },
+        {
+          incorrect: "nastey",
+          correct: "nasty"
+        },
+        {
+          incorrect: "fuls",
+          correct: "flushed"
+        },
+        {
+          incorrect: "terbo",
+          correct: "terrible"
+        },
+      ]
+    },
+    {
+       name: "Anthony",
+       video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+       essay: ["http://placehold.it/1100x850/000000/ffffff?text=AnthonyOnlyHasOnePage"],
+       vocab: [
+         {
+           incorrect: "becuse",
+           correct: "because",
+         },
+         {
+           incorrect: "nos",
+           correct: "knows"
+         },
+         {
+           incorrect: "no",
+           correct: "know"
+         },
+         {
+           incorrect: "of",
+           correct: "have"
+         },
+         {
+           incorrect: "fluch",
+           correct: "flushed",
+         }
+       ]
+     },
+     {
+        name: "Anthony R.",
+        video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+        essay: ["http://placehold.it/1100x850/000000/ffffff?text=AnthonyROnlyHasOnePage"],
+        vocab: [
+          {
+            incorrect: "wen",
+            correct: "when",
+          },
+          {
+            incorrect: "allmost",
+            correct: "almost"
+          },
+          {
+            incorrect: "puick",
+            correct: "puked"
+          },
+          {
+            incorrect: "smeld",
+            correct: "smelled"
+          },
+          {
+            incorrect: "nasste",
+            correct: "nasty",
+          },
+          {
+            incorrect: "somebudde",
+            correct: "somebody",
+          },
+          {
+            incorrect: "wrog",
+            correct: "wrong"
+          },
+          {
+            incorrect: "nastey",
+            correct: "nasty"
+          },
+          {
+            incorrect: "toylet",
+            correct: "toilet"
+          }
+        ]
+      },
+      {
+         name: "Nameless Kid",
+         video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+         essay: ["http://placehold.it/1100x850/000000/ffffff?text=NamelessKidOnlyHasOnePage"],
+         vocab: [
+           {
+             incorrect: "dusting",
+             correct: "disgusting",
+           },
+           {
+             incorrect: "nomder",
+             correct: "number"
+           },
+           {
+             incorrect: "fellet",
+             correct: "felt"
+           },
+           {
+             incorrect: "people",
+             correct: "people"
+           },
+           {
+             incorrect: "shad",
+             correct: "should",
+           },
+           {
+             incorrect: "bidin't",
+             correct: "didn't",
+           },
+           {
+             incorrect: "hapen",
+             correct: "happen"
+           },
+           {
+             incorrect: "cud",
+             correct: "could"
+           },
+           {
+             incorrect: "worcing",
+             correct: "working"
+           },
+           {
+             incorrect: "lerning",
+             correct: "learning"
+           },
+         ]
+       },
+       {
+          name: "Gloria",
+          video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+          essay: ["http://placehold.it/1100x850/000000/ffffff?text=GloriaOnlyHasOnePage"],
+          vocab: [
+            {
+              incorrect: "when ever",
+              correct: "whenever",
+            },
+            {
+              incorrect: "lives",
+              correct: "leaves"
+            },
+            {
+              incorrect: "their",
+              correct: "they're"
+            }
+          ]
+        },
+        {
+           name: "Omar",
+           video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+           essay: ["http://placehold.it/1100x850/000000/ffffff?text=OmarOnlyHasOnePage"],
+           vocab: [
+             {
+               incorrect: "poup",
+               correct: "poop",
+             },
+             {
+               incorrect: "toylet",
+               correct: "toilet"
+             },
+             {
+               incorrect: "did'nt",
+               correct: "didn't"
+             },
+             {
+               incorrect: "flushit",
+               correct: "flush it"
+             },
+             {
+               incorrect: "though. up",
+               correct: "throw up -OR- though"
+             }
+           ]
+         },
+         {
+            name: "Nathan",
+            video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+            essay: ["http://placehold.it/1100x850/000000/ffffff?text=NathanOnlyHasOnePage"],
+            vocab: [
+              {
+                incorrect: "toylet",
+                correct: "toilet"
+              },
+              {
+                incorrect: "rog",
+                correct: "wrong"
+              },
+              {
+                incorrect: "dident",
+                correct: "didn't"
+              }
+            ]
+          },
+          {
+             name: "Jason",
+             video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
+             essay: ["http://placehold.it/1100x850/000000/ffffff?text=JasonOnlyHasOnePage"],
+             vocab: [
+               {
+                 incorrect: "dissapointed",
+                 correct: "disappointed"
+               },
+               {
+                 incorrect: "floshed",
+                 correct: "flushed"
+               },
+               {
+                 incorrect: "tolit",
+                 correct: "toilet"
+               },
+               {
+                 incorrect: "af",
+                 correct: "have"
+               },
+               {
+                 incorrect: "consecinc",
+                 correct: "consequences"
+               },
+               {
+                 incorrect: "to",
+                 correct: "too"
+               },
+               {
+                 incorrect: "thats",
+                 correct: "that's"
+               },
+               {
+                 incorrect: "fin",
+                 correct: "fine"
+               },
+               {
+                 incorrect: "ten",
+                 correct: "then"
+               }
+             ]
+           }
 ]
 
 $(document).ready(function(){
