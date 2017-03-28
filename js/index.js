@@ -4,7 +4,7 @@ var students = [
   {
      name: "Rosemary",
      video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-     essay: ["http://placehold.it/1100x850/000000/ffffff?text=RosemaryOnlyHasOnePage"],
+     essay: ["images/rosemary.jpg"],
      vocab: [
        {
          incorrect: "ungley",
@@ -46,7 +46,7 @@ var students = [
    {
       name: "Nicole",
       video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-          essay: ["http://placehold.it/1100x850/000000/ffffff?text=NicolePage1", "http://placehold.it/1100x850/000000/ffffff?text=NicolePage2"],
+      essay: ["images/nicole1.jpg", "images/nicole2.jpg"],
       vocab: [
         {
           incorrect: "wasint",
@@ -77,7 +77,7 @@ var students = [
   {
     name: "Matthew",
     video: "https://www.youtube.com/embed/FNtpPW_7H1k",
-    essay: ["images/matthew.jpg", "http://placehold.it/1100x850/000000/ffffff?text=MatthewPage2"],
+    essay: ["images/matthew1.jpg", "images/matthew2.jpg"],
     vocab: [
       {
         incorrect: "wong",
@@ -148,7 +148,7 @@ var students = [
   {
      name: "Evelyn",
      video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-     essay: ["http://placehold.it/1100x850/000000/ffffff?text=EvelynOnlyHasOnePage"],
+     essay: ["images/evelyn.jpg"],
      vocab: [
        {
          incorrect: "toloit",
@@ -167,7 +167,7 @@ var students = [
    {
       name: "Adriana",
       video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-      essay: ["http://placehold.it/1100x850/000000/ffffff?text=AdrianaOnlyHasOnePage"],
+      essay: ["images/adriana.jpg"],
       vocab: [
         {
           incorrect: "smaill",
@@ -210,7 +210,7 @@ var students = [
     {
        name: "Anthony",
        video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-       essay: ["http://placehold.it/1100x850/000000/ffffff?text=AnthonyOnlyHasOnePage"],
+       essay: ["images/anthony.jpg"],
        vocab: [
          {
            incorrect: "becuse",
@@ -237,7 +237,7 @@ var students = [
      {
         name: "Anthony R.",
         video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-        essay: ["http://placehold.it/1100x850/000000/ffffff?text=AnthonyROnlyHasOnePage"],
+        essay: ["images/anthony_r.jpg"],
         vocab: [
           {
             incorrect: "wen",
@@ -280,7 +280,7 @@ var students = [
       {
          name: "Nameless Kid",
          video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-         essay: ["http://placehold.it/1100x850/000000/ffffff?text=NamelessKidOnlyHasOnePage"],
+         essay: ["images/nameless.jpg"],
          vocab: [
            {
              incorrect: "dusting",
@@ -327,7 +327,7 @@ var students = [
        {
           name: "Gloria",
           video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-          essay: ["http://placehold.it/1100x850/000000/ffffff?text=GloriaOnlyHasOnePage"],
+          essay: ["images/gloria.jpg"],
           vocab: [
             {
               incorrect: "when ever",
@@ -346,7 +346,7 @@ var students = [
         {
            name: "Omar",
            video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-           essay: ["http://placehold.it/1100x850/000000/ffffff?text=OmarOnlyHasOnePage"],
+           essay: ["images/omar.jpg"],
            vocab: [
              {
                incorrect: "poup",
@@ -373,7 +373,7 @@ var students = [
          {
             name: "Nathan",
             video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-            essay: ["http://placehold.it/1100x850/000000/ffffff?text=NathanOnlyHasOnePage"],
+            essay: ["images/nathan.jpg"],
             vocab: [
               {
                 incorrect: "toylet",
@@ -392,7 +392,7 @@ var students = [
           {
              name: "Jason",
              video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-             essay: ["http://placehold.it/1100x850/000000/ffffff?text=JasonOnlyHasOnePage"],
+             essay: ["images/jason.jpg"],
              vocab: [
                {
                  incorrect: "dissapointed",
@@ -471,7 +471,7 @@ function displayStudent(){
     //advance essay image to next object (first or only page)
     $("#essay img").attr( "src", students[count].essay[0]);
     //decide whether to display nav
-    displayNav ();
+    displayNav();
     displayVocab();
 }
 
@@ -558,17 +558,13 @@ function displayNav (){
     // if two, show #essay-arrows (display: block)
     $("#essay-arrows").removeClass("hidden");
     //mark left arrow disabled since we're on the first page
-    $("#essay .left-arrow").addClass("disabled");
-    $("#essay .right-arrow").removeClass("disabled");
+    $("#essay .arrow-left").addClass("disabled");
+    $("#essay .arrow-right").removeClass("disabled");
    // else if there's only one page, hide the essay nav
   } else {
         $("#essay-arrows").addClass("hidden");
   }
 };
-
-
-
-
 
 //NAVIGATING ESSAY PAGES (when there's more than one)
 
@@ -576,8 +572,8 @@ function displayNav (){
 // advance forward or back to next essay page
 
   $("#essay div div").on("click", function (){
-   $(this).toggleClass("disabled");
-   $(this).siblings().toggleClass("disabled");
+   $(this).addClass("disabled");
+   $(this).siblings().removeClass("disabled");
    //if you clicked left, show 1st page
    if ($(this).hasClass("arrow-left")) {
       console.log("previous page");
