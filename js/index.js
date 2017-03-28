@@ -467,7 +467,7 @@ function displayStudent(){
     //write student name
     $("#student-name").text( students[count].name);
     //advance video to next object
-    $("iframe").attr( "src", students[count].video);
+    $("#gallery-right iframe").attr( "src", students[count].video);
     //advance essay image to next object (first or only page)
     $("#essay img").attr( "src", students[count].essay[0]);
     //decide whether to display nav

@@ -103,10 +103,10 @@ h3 {
 
 li {
      float: left;
-     width: 100px;
+     width: 125px;
      font-weight: bold;
      margin: 10px 2%;
-     padding:  5px 2%;
+     padding:  10px 2%;
      color: #151515;
      background-image: url("../images/flush.svg");
      background-repeat: no-repeat;
@@ -124,7 +124,7 @@ li a {
      position: relative;
      text-decoration: none;
      color: black;
-     top: -11px;
+     top: -14px;
      font-size: .8em;
 }
 
@@ -152,6 +152,9 @@ strong {
      font-weight: bold;
 }
 
+ul {
+  padding-left: 0px
+}
 
 
 .active {
@@ -184,7 +187,9 @@ strong {
 }
 
 
-
+#artscraft img {
+  max-width: 85%;
+}
 #backstory {
      float: left;
      margin: 20px 3% 20px 0%;
@@ -231,7 +236,7 @@ strong {
      width: 55%;
      float: left;
 }
-#essay img, iframe {
+#essay img, #gallery-right iframe {
      width: 100%;
 }
 
@@ -296,5 +301,3 @@ nav li:last-child {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
