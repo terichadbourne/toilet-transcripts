@@ -77,7 +77,7 @@ var students = [
   {
     name: "Matthew",
     video: "https://www.youtube.com/embed/FNtpPW_7H1k",
-    essay: ["images/matthew1.jpg", "images/matthew2.jpg"],
+    essay: ["images/matthew1_stamped.jpg", "images/matthew2.jpg"],
     vocab: [
       {
         incorrect: "wong",
@@ -148,7 +148,7 @@ var students = [
   {
      name: "Evelyn",
      video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-     essay: ["images/evelyn.jpg"],
+     essay: ["images/evelyn_stamped.jpg"],
      vocab: [
        {
          incorrect: "toloit",
@@ -327,7 +327,7 @@ var students = [
        {
           name: "Gloria",
           video: "https://www.youtube.com/embed/fuuBOmm2ZXU",
-          essay: ["images/gloria.jpg"],
+          essay: ["images/gloria_stamped.jpg"],
           vocab: [
             {
               incorrect: "when ever",
