@@ -265,7 +265,7 @@ ul {
 
 /* RESPONSIVE STUFF */
 
-@media (min-width: 0px) and (max-width: 600px) {
+@media (min-width: 0px) and (max-width: 800px) {
 
 body {
      font-size: 18px;

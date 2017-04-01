@@ -345,7 +345,7 @@ var students = [
         },
         {
            name: "Omar",
-           video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=250&end=261",
+           video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=250&end=262",
            essay: ["images/omar.jpg"],
            vocab: [
              {
