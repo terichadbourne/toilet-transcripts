@@ -102,16 +102,9 @@ h3 {
 
 
 li {
-     float: left;
-     width: 125px;
-     font-weight: bold;
-     margin: 10px 2%;
-     padding:  10px 2%;
-     color: #151515;
-     background-image: url("../images/flush.svg");
-     background-repeat: no-repeat;
-     background-position: bottom;
-     text-align: center;
+  width: 125px;
+  float: left;
+  margin: 0 1%;
 }
 
 li.flushed {
@@ -126,6 +119,15 @@ li a {
      color: black;
      top: -14px;
      font-size: .8em;
+          background-image: url("../images/flush.svg");
+          background-repeat: no-repeat;
+          background-position: bottom;
+          width: 125px;
+          display: block;
+          font-weight: bold;
+          padding-top: 2px;
+          padding-bottom: 30px;
+          text-align: center;
 }
 
 nav {
@@ -133,14 +135,12 @@ nav {
 }
 
 header nav {
-     width: 600px;
+     width: 545px;
 }
 
 header h1 {
      margin-top: 0;
 }
-
-
 
 p {
      font-size: 1em;
@@ -153,7 +153,8 @@ strong {
 }
 
 ul {
-  padding-left: 0px
+  padding-left: 0px;
+  margin: 10px 0;
 }
 
 
