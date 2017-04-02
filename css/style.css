@@ -291,6 +291,10 @@ ul {
      width: 36%;
 }
 
+#gallery-right h2 {
+  margin-left: 0;
+}
+
 #page-header.expanded nav {
 	display: block;
 }
@@ -305,14 +309,13 @@ ul {
 }
 
 #student-div {
-     display: inline-block;
+     display: block;
+     margin-top: 10px;
 }
 
 #student h2 {
      display: inline;
 }
-
-
 
 
 /* RESPONSIVE STUFF */
@@ -345,8 +348,6 @@ ul {
 #gallery-right, #essay {
      width: 96%;
 }
-
-
 
 #essay, #gallery-right {
   margin: 0px;
