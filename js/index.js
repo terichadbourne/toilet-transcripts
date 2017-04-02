@@ -3,7 +3,7 @@ var count = 0;
 var students = [
   {
      name: "Rosemary",
-     video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=60&end=75",
+     video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=60&end=75",
      essay: ["images/rosemary.jpg"],
      vocab: [
        {
@@ -45,7 +45,7 @@ var students = [
    ]},
    {
       name: "Nicole",
-      video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=76&end=97",
+      video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=76&end=97",
       essay: ["images/nicole1.jpg", "images/nicole2.jpg"],
       vocab: [
         {
@@ -76,7 +76,7 @@ var students = [
   },
   {
     name: "Matthew",
-    video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=100&end=128",
+    video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=100&end=128",
     essay: ["images/matthew1_stamped.jpg", "images/matthew2.jpg"],
     vocab: [
       {
@@ -147,7 +147,7 @@ var students = [
   },
   {
      name: "Evelyn",
-     video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=131&end=149",
+     video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=131&end=149",
      essay: ["images/evelyn_stamped.jpg"],
      vocab: [
        {
@@ -166,7 +166,7 @@ var students = [
    },
    {
       name: "Adriana",
-      video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=150&end=174",
+      video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=150&end=174",
       essay: ["images/adriana.jpg"],
       vocab: [
         {
@@ -209,7 +209,7 @@ var students = [
     },
     {
        name: "Anthony",
-       video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=176&end=193",
+       video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=176&end=193",
        essay: ["images/anthony.jpg"],
        vocab: [
          {
@@ -236,7 +236,7 @@ var students = [
      },
      {
         name: "Anthony R.",
-        video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=194&end=218",
+        video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=194&end=218",
         essay: ["images/anthony_r.jpg"],
         vocab: [
           {
@@ -279,7 +279,7 @@ var students = [
       },
       {
          name: "Nameless Kid",
-         video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=218&end=236",
+         video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=218&end=236",
          essay: ["images/nameless.jpg"],
          vocab: [
            {
@@ -326,7 +326,7 @@ var students = [
        },
        {
           name: "Gloria",
-          video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=237&end=248",
+          video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=237&end=248",
           essay: ["images/gloria_stamped.jpg"],
           vocab: [
             {
@@ -345,7 +345,7 @@ var students = [
         },
         {
            name: "Omar",
-           video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=250&end=262",
+           video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=250&end=262",
            essay: ["images/omar.jpg"],
            vocab: [
              {
@@ -372,7 +372,7 @@ var students = [
          },
          {
             name: "Nathan",
-            video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=262&end=273",
+            video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=262&end=273",
             essay: ["images/nathan.jpg"],
             vocab: [
               {
@@ -391,7 +391,7 @@ var students = [
           },
           {
              name: "Jason",
-             video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&autoplay=1&rel=0&start=274&end=299",
+             video: "https://www.youtube.com/embed/CeaiSCOZ5xQ?&rel=0&start=274&end=299",
              essay: ["images/jason.jpg"],
              vocab: [
                {
