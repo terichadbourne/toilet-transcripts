@@ -600,5 +600,9 @@ function displayNav (){
     }
   });
 
+  //HEADER NAV WHEN SMALL
+  $(".navicon").on("click", function() {
+   $("#page-header").toggleClass("expanded");
+  });
 
 });

@@ -56,6 +56,7 @@ body {
 
 footer {
      clear: both;
+     margin-top: 10px;
 }
 
 footer, header {
@@ -66,11 +67,7 @@ footer, header {
 header {
      padding-top: 15px;
 }
-h1 {
-     text-align: center;
-     font-size: 2em;
-     font-weight: bold;
-}
+
 
 del {
      -webkit-text-decoration-color: red;
@@ -81,25 +78,32 @@ del {
      text-decoration-line: line-through;
 }
 
-ins {
-    color: red;
-    text-decoration: none;
-    font-family: 'Special Elite', Courier, cursive, sans-serif;
-    font-size: .85em;
+h1 {
+     text-align: center;
+     font-size: 2em;
+     font-weight: bold;
 }
 
 h2 {
      font-size: 1.5em;
      color: #151515;
      font-weight: bold;
+     margin: 10px 2%;
 }
 
 h3 {
      font-size: 1.2em;
      color: #151515;
      font-weight: bold;
+     margin-left: 2%;
 }
 
+ins {
+    color: red;
+    text-decoration: none;
+    font-family: 'Special Elite', Courier, cursive, sans-serif;
+    font-size: .85em;
+}
 
 li {
   width: 125px;
@@ -114,20 +118,20 @@ li.flushed {
 }
 
 li a {
-     position: relative;
-     text-decoration: none;
-     color: black;
-     top: -14px;
-     font-size: .8em;
-          background-image: url("../images/flush.svg");
-          background-repeat: no-repeat;
-          background-position: bottom;
-          width: 125px;
-          display: block;
-          font-weight: bold;
-          padding-top: 2px;
-          padding-bottom: 30px;
-          text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    top: -14px;
+    font-size: .8em;
+    background-image: url("../images/flush.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 125px;
+    display: block;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 nav {
@@ -181,12 +185,49 @@ ul {
   border-right:15px solid #808080;
 }
 
+.card {
+  float: left;
+  margin: 10px 2%;
+  padding: 20px;
+  background-color: black;
+  max-width: 47%;
+  text-align: left;
+}
+
+.card:first-of-type {
+  margin-right: 0;
+}
+
+.card iframe, .card img {
+  float: left;
+  margin-right: 20px;
+
+}
+.card h3 {
+  color: gray;
+  margin-top: 0px;
+}
+
+.card p {
+  margin-right: 0px;
+}
+
 
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
+.navicon {
+	background-image: url("../images/hamburger.png");
+	float: right;
+	width: 34px;
+	height: 41px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+/* while not in media query */
+	display: none;
+}
 
 #artscraft img {
   max-width: 85%;
@@ -231,6 +272,9 @@ ul {
      width: 95%;
 }
 
+#glossary {
+  margin-left: 2%;
+}
 
 #essay {
      margin: 20px 3%;
@@ -247,6 +291,14 @@ ul {
      width: 36%;
 }
 
+#page-header.expanded nav {
+	display: block;
+}
+
+/* when nav is expanded, show close instead of hamburger */
+#page-header.expanded .navicon {
+	background-image: url("../images/close.png");
+}
 
 #student {
      text-align: center;
@@ -264,18 +316,123 @@ ul {
 
 
 /* RESPONSIVE STUFF */
+@media (min-width: 801px) and (max-width: 1190px) {
+
+.card {
+  float: none;
+  max-width: 96%;
+}
+
+.card iframe, .card img {
+  margin-right: 20px;
+}
+}
+
+
 
 @media (min-width: 0px) and (max-width: 800px) {
 
-body {
-     font-size: 18px;
+
+.card {
+  max-width: 96%;
+  width: 96%
 }
 
-#gif, #backstory, #disclaimer, #copyright, #gallery-right, #video, #vocab, #essay {
+#disclaimer, #copyright {
+     width: 100%;
+}
+
+#gallery-right, #essay {
+     width: 96%;
+}
+
+
+
+#essay, #gallery-right {
+  margin: 0px;
+}
+#vocab, #video {
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+
+}
+
+
+@media (min-width: 0px) and (max-width: 555px) {
+
+body {
+  font-size: 18px;
+}
+
+.card {
+  text-align: center;
+}
+.card iframe, .card img {
+  float: none;
+}
+
+.navicon {
+			display: block;
+      margin-right: 2%;
+}
+
+#gif, #backstory {
      width: 95%;
 }
 
+#page-header {
+    padding: 10px 2%;
+}
 
+#page-header h1 {
+  float: left;
+  font-size: 1.8em;
+  margin: 0px;
+}
+#page-header li {
+  display: block;
+  width: 100%;
+  float: none;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#page-header li.flushed {
+   /* TO DO: add the webkit etc versions of transform */
+     transform: none;
+}
+
+#page-header li a {
+    position: static;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2em;
+    background-image: none;
+    display: block;
+    font-weight: bold;
+
+    width: 100%;
+    display: inline;
+}
+
+#page-header nav {
+  clear: both;
+  display: none;
+  margin-top: 5px;
+  width: 100%;
+
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 420px) {
+
+#page-header h1 {
+  font-size: 1.4em;
+}
+}
 /*
 TODO fix nav bar responsive
 nav li {
@@ -288,7 +445,7 @@ nav li:last-child {
  */
 
 
-}
+
 
 /******************************************
 /* LAYOUT
