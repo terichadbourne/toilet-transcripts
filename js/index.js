@@ -512,11 +512,16 @@ function buildDictionary (){
  //sort dictionary alpabetically by incorrect spellings
  dictionary.sort(alphaIncorrect);
 
- // TO DO HERE - DE-DUPLICATE THE dictionary ARRAY (OF OBJECTS). ONLY REMOVE IF
- // BOTH THE dictionary[i].incorrect AND THE dictionary[i].correct ARE ALREADY
- // DUPLICATED ELSEWHERE
+//de-dupe dictionary so there are no identical entries
+  var map = {};
+  dictionary = dictionary.filter(function (item) {
+    var key = toKey(item)
+    if (map[key]) return false
+    map[key] = true
+    return true
+  })
 
-//print dictionary to glossary page
+//print the de-duped dictionary to the glossary page
  dictionary.forEach(function(el,i){
     $("#glossary").append("<span class='glossaryItem'><span>" +
     dictionary[i].incorrect + "</span> <ins>" + dictionary[i].correct
@@ -525,6 +530,10 @@ function buildDictionary (){
 
 }
 
+//related to the dictionary de-duping
+function toKey (item) {
+ return item.correct + item.incorrect
+}
 //ADVJUSTING THE COUNT TO CHANGE STUDENT RECORD
 
 //runs when right arrow is clicked to advance to next student record
@@ -538,6 +547,8 @@ function nextStudent(){
     count +=1;
   }
 }
+
+
 
 //runs when left arrow is clicked to adjust to previous student record
 function previousStudent(){
