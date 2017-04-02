@@ -219,7 +219,7 @@ ul {
 }
 
 .navicon {
-	background-image: url("../images/hamburger_gray.png");
+	background-image: url("../images/hamburger.png");
 	float: right;
 	width: 34px;
 	height: 41px;
@@ -301,7 +301,7 @@ ul {
 
 /* when nav is expanded, show close instead of hamburger */
 #page-header.expanded .navicon {
-	background-image: url("../images/close_gray.png");
+	background-image: url("../images/close.png");
 }
 
 #student {
