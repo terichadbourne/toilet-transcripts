@@ -511,14 +511,18 @@ function buildDictionary (){
 });
  //sort dictionary alpabetically by incorrect spellings
  dictionary.sort(alphaIncorrect);
+
+ // TO DO HERE - DE-DUPLICATE THE dictionary ARRAY (OF OBJECTS). ONLY REMOVE IF
+ // BOTH THE dictionary[i].incorrect AND THE dictionary[i].correct ARE ALREADY
+ // DUPLICATED ELSEWHERE
+
 //print dictionary to glossary page
  dictionary.forEach(function(el,i){
-    $("#glossary").append("<span>");
-    $("#glossary span:last-of-type").append(dictionary[i].incorrect);
-    $("#glossary").append(" <ins>");
-    $("#glossary ins:last-of-type").append(dictionary[i].correct);
-    $("#glossary").append("<br>");
+    $("#glossary").append("<span class='glossaryItem'><span>" +
+    dictionary[i].incorrect + "</span> <ins>" + dictionary[i].correct
+    + "</ins> </span> <br>");
   });
+
 }
 
 //ADVJUSTING THE COUNT TO CHANGE STUDENT RECORD
