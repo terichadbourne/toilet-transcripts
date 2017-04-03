@@ -573,11 +573,12 @@ function displayNav (){
     // if two, show #essay-arrows (display: block)
     $("#essay-arrows").removeClass("hidden");
     //mark left arrow disabled since we're on the first page
-    $("#essay .arrow-left").addClass("disabled");
-    $("#essay .arrow-right").removeClass("disabled");
+    $("#essay .page1").addClass("disabled");
+    $("#essay .page2").removeClass("disabled");
    // else if there's only one page, hide the essay nav
   } else {
         $("#essay-arrows").addClass("hidden");
+
   }
 };
 
@@ -590,13 +591,15 @@ function displayNav (){
    $(this).addClass("disabled");
    $(this).siblings().removeClass("disabled");
    //if you clicked left, show 1st page
-   if ($(this).hasClass("arrow-left")) {
+   if ($(this).hasClass("page1")) {
       console.log("previous page");
       $("img").attr( "src", students[count].essay[0]);
+      $("#page-number").text("1");
   //if you clicked right, show 2nd page
     } else {
       console.log("next page");
       $("img").attr( "src", students[count].essay[1]);
+      $("#page-number").text("2");
     }
   });
 

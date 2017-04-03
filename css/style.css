@@ -54,6 +54,7 @@ body {
 }
 
 
+
 footer {
      clear: both;
      margin-top: 10px;
@@ -167,6 +168,7 @@ ul {
 
 }
 
+
 .arrow-right {
   display: inline-block;
   width: 0;
@@ -216,6 +218,11 @@ ul {
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
+    /* visibility: hidden; */
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .navicon {
@@ -251,7 +258,8 @@ ul {
 
 #essay-arrows {
      display: block;
-     text-align: center;
+     text-align: left;
+     color: #808080;
 }
 
 #essay-arrows.hidden {
@@ -293,6 +301,27 @@ ul {
 
 #gallery-right h2 {
   margin-left: 0;
+}
+
+.page1, .page2 {
+  color: black;
+  background-color: #808080;
+  border-radius: 20px;
+  padding: 2px;
+  display: inline-block;
+  width: 75px;
+  font-size: 0.8em;
+  text-align: center;
+  float: right;
+  margin-top: 1.1em;
+}
+
+.page1, .page2 {
+  margin-left: 2%;
+}
+
+#essay h2 {
+  float: left;
 }
 
 #page-header.expanded nav {
@@ -341,18 +370,20 @@ ul {
   width: 96%
 }
 
-#disclaimer, #copyright {
-     width: 100%;
-}
-
-#gallery-right, #essay {
-     width: 96%;
+#copyright, #disclaimer {
+  width: 100%;
 }
 
 #essay, #gallery-right {
   margin: 0px;
+  width: 96%;
 }
-#vocab, #video {
+
+#gallery-right h2 {
+  margin-left: 2%;
+}
+
+#video, #vocab {
   margin-left: 2%;
   margin-bottom: 10px;
 }
@@ -378,6 +409,9 @@ body {
       margin-right: 2%;
 }
 
+.page1, .page2 {
+  width: 50px;
+}
 #gif, #backstory {
      width: 95%;
 }
