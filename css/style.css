@@ -351,7 +351,7 @@ ul {
 /**********************************/
 
 /* screen is wide enough to fit multiple entries across on the Arts & Crafts page */
-@media all and (min-width: 801px) and (max-width: 1190px), only screen and (min-width: 801px) and (max-width: 1190px) {
+@media all and (min-width: 801px) and (max-width: 1190px), only screen and (min-device-width: 801px) and (max-device-width: 1190px) {
 
 .card {
   float: none;
@@ -366,7 +366,7 @@ ul {
 
 /* can no longer view essay if there are two columns on gallery page */
 /* footer starts looking shitty if still two columns */
-@media all and (max-width: 800px), only screen and (device-max-width: 800px) {
+@media all and (max-width: 800px), only screen and (max-device-width: 800px) {
 
 
 .card {
@@ -395,7 +395,7 @@ ul {
 }
 
 /* need to switch to hamburger nav instead of flushers, start shrinking text */
-@media all and (max-width: 555px), only screen and (device-max-width: 500px) {
+@media all and (max-width: 555px), only screen and (max-device-width: 500px) {
 
 body {
   font-size: 18px;
@@ -469,7 +469,7 @@ body {
 }
 
 /* shrink header h1 so it still fits w/ navicon */
-@media all and (max-width: 420px), only screen and (device-max-width: 400px) {
+@media all and (max-width: 420px), only screen and (max-device-width: 400px) {
 
 #page-header h1 {
   font-size: 1.6em;
@@ -477,7 +477,7 @@ body {
 }
 
 /* shrink header h1 further so it still fits w/ navicon */
-@media all and (max-width: 375px), only screen and (device-max-width: 375px) {
+@media all and (max-width: 375px), only screen and (max-device-width: 375px) {
 
 #page-header h1 {
   font-size: 1.4em;
