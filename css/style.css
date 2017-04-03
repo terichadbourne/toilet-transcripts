@@ -346,9 +346,12 @@ ul {
      display: inline;
 }
 
-
+/**********************************/
 /* RESPONSIVE STUFF */
-@media (min-width: 801px) and (max-width: 1190px) {
+/**********************************/
+
+/* screen is wide enough to fit multiple entries across on the Arts & Crafts page */
+@media all and (min-width: 801px) and (max-width: 1190px), only screen and (min-width: 801px) and (max-width: 1190px) {
 
 .card {
   float: none;
@@ -361,8 +364,9 @@ ul {
 }
 
 
-
-@media (min-width: 0px) and (max-width: 800px) {
+/* can no longer view essay if there are two columns on gallery page */
+/* footer starts looking shitty if still two columns */
+@media all and (max-width: 800px), only screen and (device-max-width: 800px) {
 
 
 .card {
@@ -390,8 +394,8 @@ ul {
 
 }
 
-
-@media (min-width: 0px) and (max-width: 555px) {
+/* need to switch to hamburger nav instead of flushers, start shrinking text */
+@media all and (max-width: 555px), only screen and (device-max-width: 500px) {
 
 body {
   font-size: 18px;
@@ -412,6 +416,8 @@ body {
 .page1, .page2 {
   width: 50px;
 }
+
+
 #gif, #backstory {
      width: 95%;
 }
@@ -462,32 +468,21 @@ body {
 
 }
 
-@media (min-width: 0px) and (max-width: 420px) {
+/* shrink header h1 so it still fits w/ navicon */
+@media all and (max-width: 420px), only screen and (device-max-width: 400px) {
 
 #page-header h1 {
   font-size: 1.6em;
 }
 }
 
-@media (min-width: 0px) and (max-width: 375px) {
+/* shrink header h1 further so it still fits w/ navicon */
+@media all and (max-width: 375px), only screen and (device-max-width: 375px) {
 
 #page-header h1 {
   font-size: 1.4em;
 }
 }
-/*
-TODO fix nav bar responsive
-nav li {
-     display: none;
-}
-
-nav li:last-child {
-     display: block;
-}
- */
-
-
-
 
 /******************************************
 /* LAYOUT
