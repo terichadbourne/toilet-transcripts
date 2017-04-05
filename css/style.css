@@ -203,6 +203,7 @@ ul {
 .card iframe, .card img {
   float: left;
   margin-right: 20px;
+  max-width: 100%
 
 }
 .card h3 {
