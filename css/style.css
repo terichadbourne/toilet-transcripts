@@ -107,15 +107,51 @@ ins {
 }
 
 li {
-  width: 125px;
-  float: left;
-  margin: 0 1%;
+    position: absolute;
+    top: 0px;
+    width: 187.5px;
+    margin: 0 1%;
+}
+
+li:nth-child(1) {
+    left: 0px;
+}
+
+li:nth-child(2) {
+    left: 135px;
+}
+
+li:nth-child(3) {
+    left: 270px;
+}
+
+li:nth-child(4) {
+    left: 405px;
 }
 
 li.flushed {
-   /* TO DO: add the webkit etc versions of transform */
-     animation-duration: 3s;
-     transform: rotate(-45deg);
+    -webkit-animation: spin 1s linear 1 forwards;
+    -moz-animation: spin 1s linear 1 forwards;
+    animation: spin 1s linear 1 forwards;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(-45deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
 }
 
 li a {
@@ -127,11 +163,12 @@ li a {
     background-image: url("../images/flush.svg");
     background-repeat: no-repeat;
     background-position: bottom;
-    width: 125px;
+    width: 187.5px;
     display: block;
     font-weight: bold;
     padding-top: 2px;
     padding-bottom: 30px;
+    padding-right: 62.5px;
     text-align: center;
 }
 
@@ -140,7 +177,9 @@ nav {
 }
 
 header nav {
+     position: relative;
      width: 545px;
+     height: 68px;
 }
 
 header h1 {
@@ -433,17 +472,20 @@ body {
   margin: 0px;
 }
 #page-header li {
+  position: relative;
   display: block;
   width: 100%;
   float: none;
   margin: 0;
   text-align: center;
   padding: 10px 0;
+  left: 0px;
 }
 
 #page-header li.flushed {
-   /* TO DO: add the webkit etc versions of transform */
-     transform: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
 }
 
 #page-header li a {
@@ -464,7 +506,7 @@ body {
   display: none;
   margin-top: 5px;
   width: 100%;
-
+  height: auto;
 }
 
 }
