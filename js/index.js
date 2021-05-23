@@ -608,4 +608,14 @@ function displayNav (){
    $("#page-header").toggleClass("expanded");
   });
 
+  //PLAY TOILET FLUSH SOUND EFFECT WHEN PAGE IS LOADED
+  function play_toilet_flush(){
+    var sound = new Howl({
+      src: ['sounds/toilet_flush.mp3'],
+      volume: 0.2
+    });
+    sound.play();
+  }
+  play_toilet_flush();
+
 });
